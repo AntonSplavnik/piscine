@@ -17,7 +17,8 @@ void	output(char a, char b, char c)
 	write(1, &a, 1);
 	write(1, &b, 1);
 	write(1, &c, 1);
-	write(1, ", ", 2);
+	if (a != '7')
+		write(1, ", ", 2);
 }
 
 void	ft_print_comb(void)
@@ -45,9 +46,9 @@ void	ft_print_comb(void)
 }
 
 /*
-int main(void)
+int	main(void)
 {
-    ft_print_comb();
-    return (0);
+	ft_print_comb();
+	return (0);
 }
 */
